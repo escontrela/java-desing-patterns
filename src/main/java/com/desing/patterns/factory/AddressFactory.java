@@ -77,18 +77,4 @@ public class AddressFactory {
 
         return (T) type.getConstructor().create(steps.get());
     }
-
-    public static void main(String args[]) {
-
-        Supplier<AddressBuilder> WithSpanishAleatoryCreator = new Supplier<AddressBuilder>() {
-            @Override
-            public AddressBuilder get() {
-
-                return new AddressBuilder();
-            }
-        };
-
-        BillingAddress address = create(AddressType.BILLING, WithSpanishAleatoryCreator);
-        System.out.println("Addresss:" + address);
-    }
 }
