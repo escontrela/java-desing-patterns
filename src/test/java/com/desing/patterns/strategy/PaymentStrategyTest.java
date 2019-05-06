@@ -42,7 +42,7 @@ public class PaymentStrategyTest {
 
     @ParameterizedTest(name = "Performs a invoice payment with the arguments: {0}")
     @MethodSource("testArgumentsSupplier")
-    @Tag("FactoryPattern")
+    @Tag("StrategyPattern")
     public void thisTestShouldUseDifferentPaymentStrategiesToPayTheInvoice(PaymentStrategy paymentMethod){
 
         BillingAddress spainAddress
