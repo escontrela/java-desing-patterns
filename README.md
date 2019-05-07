@@ -1,2 +1,2 @@
-# java-desing-patterns
-Implementation of common used GoF desing patterns in java
+# java-design-patterns
+Implementation of common used GoF design patterns in java
